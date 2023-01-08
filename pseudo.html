@@ -24,6 +24,30 @@
         a:visited{
             color: red;
         }
+        li:first-child{
+            color: skyblue;
+        }
+        li:last-child{
+            color: red;
+            background-color: skyblue;
+        }
+        li:nth-child(3n){
+            color: rgb(39, 242, 39);
+        }
+        li:nth-child(2n+1){
+          background-color: darkgray;
+        }
+        h3::before {
+           content: 'hallo ';
+        }
+        h3::after{
+            content: ' gello ';
+            background-color: darkkhaki;
+            font-size: 39px;
+        }
+        .happy::after{
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -32,8 +56,24 @@
     <input class="middle-person" type="text">
     <input type="text">
     <br>
+    <h3 class="happy">middle-size header -1</h3>
+    <h3>middle-size header -2</h3>
+    <h3>middle-size header -3</h3>
+    <h3>middle-size header -4</h3>
+    <h3>middle-size header -5</h3>
+    <h3>middle-size header -6</h3>
     <a href="https://www.youtube.com/">youtube</a>
     <a href="https://www.brainyquote.com/topics/brand-new-quotes">never visited</a>
     <a href="https://web.programming-hero.com/home/">prohramming-hero</a>
+    <ul>
+        <li>Alia</li>
+        <li>dalia</li>
+        <li>Kalia</li>
+        <li>Salia</li>
+        <li>Jalia</li>
+        <li>Charaia</li>
+        <li>maria</li>
+        <li>rafsan</li>
+    </ul>
 </body>
 </html>
